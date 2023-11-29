@@ -1,18 +1,211 @@
-#logo{
-    position: relative;
-    width: 150px;
-    height: 150px;
-    border-radius: 100%;
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
 }
-.navigate{
+
+body{
+    height: 100vh;
+    background-color: black;
+    background-image: url('images/Hero_Image.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+li{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 1rem;
+}
+
+a:hover{
+    color: orange;
+}
+header{
+    position: relative;
+    padding: 0 2rem;
+}
+
+/*Navigation Bar*/
+.navbar{
+    width: 100%;
+    height: 60px;
+    max-width: 1200px;
+    margin: 0 auto;
     display: flex;
-    justify-content: left;
-    flex-direction: row;
-    
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar .logo a{
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.navbar .links{
+    display: flex;
+    gap: 2rem;
+}
+
+.navbar .toggle_btn{
+    color: #fff;
+    font-size: 1.5rem;
+    cursor: pointer;
+    display: none;
+}
+
+.order_btn{
+    background-color: orange;
+    color: #fff;
+    padding: 0.5rem 1rem;
+    border: none;
+    outline: none;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: scale 0.2 ease;
+}
+
+.order_btn:hover{
+    scale: 1.05;
+    color: #fff;
+}
+
+.order_btn:active{
+    scale: 0.95;
+}
+
+/*Dropdown*/
+.dropdown{
+    display: none;
+    position: absolute;
+    right: 2rem;
+    top: 60px;
+    height: 0;
+    width: 300px;
+    background: rgba(255,255,255,0.1);
+    backdrop-filter: blur(15px);
+    border-radius: 10px;
+    overflow: hidden;
+    transition: height 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.dropdown.open{
+    height: 250px;
 
 }
-.link{
+
+.dropdown li{
+    padding: 0.7rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.dropdown .order_btn{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+/*hero*/
+section#hero{
+    height: calc(100vh - 60px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #000;
+}
+
+#hero h1{
+    font-size: 5rem;
+    margin-bottom: 1rem;
+}
+
+#hero p{
+    font-size: 2rem;
+}
+
+/*Order Page*/
+
+/*Menu*/
+section#menu {
+    padding: 100px;
+}
+
+#menu h2{
     display: flex;
     justify-content: center;
     align-items: center;
+    color: #000;
 }
+
+.menu-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border: 1px solid orange;
+    border-radius: 6px;
+    margin-bottom: 12px;
+    background-color:maroon;
+}
+
+img {
+    width: 180px;
+    height: 150px;
+    object-fit: cover;
+    margin-right: 15px;
+}
+
+/*Cart*/
+section#cart {
+    background-color: #f9f9f9;
+    padding: 20px;
+}
+
+#cart-items {
+    list-style: none;
+    padding: 0;
+}
+
+#cart-items li {
+    margin-bottom: 10px;
+}
+
+button {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #555;
+}
+
+@media(max-width: 992px){
+    .navbar .links,
+    .navbar .order_btn{
+        display: none;
+    }
+
+    .navbar .toggle_btn{
+        display: block;
+    }
+
+    .dropdown{
+        display: block;
+    }
+}
+
+

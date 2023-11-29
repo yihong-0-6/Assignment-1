@@ -4,39 +4,120 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Downie Burger</title>
-    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-Avb2QiuDEEvB4bZJYdft2mNjVShBftLdPG8FJ0V7irTLQ8Uo0qcPxh4Plq7G5tGm0rU+1SPhVotteLpBERwTkw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="navbar.js" defer></script>
+    <script src="order.js" defer></script>
     <link rel="stylesheet" href="downie.css">
-    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="order.css">
 </head>
 <body>
-    <div class="navigate">
-        <div><img src="images/Downies Logo.png" alt="logo" id="logo"></div>
-        <div><h1></h1></div>
-        <div id="home"><a href="index.html">Home</a></div>
-        <div id="menu"><a href="menu.html">Menu</a></div>
-        <div id="location"><a href="location.html">Location</a></div>
-        <div id="about"><a href="promo.html">Promotion</a></div>
-        <div id="order"><a href="order.html">Order Now</a></div>
-        <div id="feedback"><a href="feedback.html">Feedback</a></div>
-    </div>
-    <section id="menu">
-        <h2>Menu</h2>
-        <div class="menu-item" id="item1">
-            <img src="item1.jpg" alt="Item 1">
-            <h3>Item 1</h3>
-            <p>Description of item 1.</p>
-            <p>Price: $10.99</p>
-            <button onclick="addToCart('Item 1', 10.99)">Add to Cart</button>
+    <header>
+        <div class="navbar">
+            <div class="logo"><a href="index.html">Downie Burger</a></div>
+            <ul class="links">
+                <li><a href="index.html"class="link">Home</a></li>
+                <li><a href="about.html"class="link">About Us</a></li>
+                <li><a href="location.html"class="link">Location</a></li>
+                <li><a href="reservation.html"class="link">Reservation</a></li>
+            </ul>
+            <a href="order.html" class="order_btn">Order Now</a>
+            <div class="toggle_btn">
+                <i class="fa-solid fa-bars"></i>
+            </div>
         </div>
-        <!-- Repeat similar blocks for other menu items -->
-    </section>
+            
+        <div class="dropdown">
+            <li><a href="index.html"class="link">Home</a></li>
+            <li><a href="about.html"class="link">About Us</a></li>
+            <li><a href="location.html"class="link">Location</a></li>
+            <li><a href="reservation.html"class="link">Reservation</a></li>
+            <li><a href="order.html" class="order_btn">Order Now</a></li>
+        </div>
+    </header>
 
-    <section id="cart">
-        <h2>Shopping Cart</h2>
-        <ul id="cart-items">
-            <!-- Cart items will be dynamically added here -->
-        </ul>
-        <p>Total: $<span id="total">0.00</span></p>
-        <button onclick="checkout()">Checkout</button>
-    </section>
+    <main>
+        <section id="menu">
+            <h2>Menu</h2>
+            <div class="menu-item">
+                <img src="images/Menu_Image_1.jpg" alt="Cheese Burger">
+                <h3>Cheese Burger</h3>
+                <p>Ingrediants: Beef Patty, Bread, Lettuce, Cheese, Secret Sauce</p>
+                <p>Price: $8.90</p>
+                <button onclick="addToCart('Cheese Burger', 8.90)">Add to Cart</button>
+            </div>
+
+            <div class="menu-item">
+                <img src="images/Menu_Image_2.jpg" alt="Chicken Burger">
+                <h3>Chicken Burger</h3>
+                <p>Ingrediants: Chicken Patty. Bread, Lettuce, Cheese, Secret Sauce</p>
+                <p>Price: $6.90</p>
+                <button onclick="addToCart('Chicken Burger', 6.90)">Add to Cart</button>
+            </div>
+
+            <div class="menu-item">
+                <img src="images/Menu_Image_3.jpg" alt="Pulled Pork Burger">
+                <h3>Pulled Pork Burger</h3>
+                <p>Ingrediants: Pulled Pork, Bread, Lettuce, Tomato, Secret Sauce</p>
+                <p>Price: $8.90</p>
+                <button onclick="addToCart('Pulled Pork Burger', 8.90)">Add to Cart</button>
+            </div>
+
+            <div class="menu-item">
+                <img src="item1.jpg" alt="Item 1">
+                <h3>Item 1</h3>
+                <p>Description of item 1.</p>
+                <p>Price: $10.99</p>
+                <button onclick="addToCart('Item 1', 10.99)">Add to Cart</button>
+            </div>
+
+            <div class="menu-item">
+                <img src="item1.jpg" alt="Item 1">
+                <h3>Item 1</h3>
+                <p>Description of item 1.</p>
+                <p>Price: $10.99</p>
+                <button onclick="addToCart('Item 1', 10.99)">Add to Cart</button>
+            </div>
+
+            <div class="menu-item">
+                <img src="item1.jpg" alt="Item 1">
+                <h3>Item 1</h3>
+                <p>Description of item 1.</p>
+                <p>Price: $10.99</p>
+                <button onclick="addToCart('Item 1', 10.99)">Add to Cart</button>
+            </div>
+
+            <div class="menu-item">
+                <img src="item1.jpg" alt="Item 1">
+                <h3>Item 1</h3>
+                <p>Description of item 1.</p>
+                <p>Price: $10.99</p>
+                <button onclick="addToCart('Item 1', 10.99)">Add to Cart</button>
+            </div>
+
+            <div class="menu-item">
+                <img src="item1.jpg" alt="Item 1">
+                <h3>Item 1</h3>
+                <p>Description of item 1.</p>
+                <p>Price: $10.99</p>
+                <button onclick="addToCart('Item 1', 10.99)">Add to Cart</button>
+            </div>
+
+            <div class="menu-item">
+                <img src="item1.jpg" alt="Item 1">
+                <h3>Item 1</h3>
+                <p>Description of item 1.</p>
+                <p>Price: $10.99</p>
+                <button onclick="addToCart('Item 1', 10.99)">Add to Cart</button>
+            </div>
+        </section>
+
+        <section id="cart">
+            <h2>Shopping Cart</h2>
+            <ul id="cart-items">
+                <!-- Cart items will be dynamically added here -->
+            </ul>
+            <p>Total: $<span id="total">0.00</span></p>
+            <button onclick="checkout()">Checkout</button>
+        </section>
+    </main>
 </body>

@@ -4,56 +4,45 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Downie Burger</title>
-    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-Avb2QiuDEEvB4bZJYdft2mNjVShBftLdPG8FJ0V7irTLQ8Uo0qcPxh4Plq7G5tGm0rU+1SPhVotteLpBERwTkw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="navbar.js" defer></script>
     <link rel="stylesheet" href="downie.css">
-    <link rel="stylesheet" href="index.css">
-</head>
-<body>
     
-    <div class="navigate">
-        <img src="images/Downies Logo.png" alt="logo" id="logo">
-        <div><h1>Downie Burger</h1></div>
-        <div id="links">
-            <a href="index.html">Menu</a>
-            <a href="menu.html">Menu</a>
-            <a href="location.html">Location</a>
-            <a href="promo.html">Promotion</a>
-            <a href="order.html">Order Now</a>
-            <a href="feedback.html">Feedback</a>
-        </div>
-    </div>
+</head>
 
-    <section id="hero">
-        <img src="images/Hero Image.jpg" alt="Hero Image" id="hero-image">
-        <div id="hero-order"><a href="">Order Now</a></div>
-    </section>
-
-    <section id="Pages">
-        <div>
-            <a href="">Promotions</a>
+<body>
+    <header>
+        <div class="navbar">
+            <div class="logo"><a href="index.html">Downie Burger</a></div>
+            <ul class="links">
+                <li><a href="index.html"class="link">Home</a></li>
+                <li><a href="about.html"class="link">About Us</a></li>
+                <li><a href="location.html"class="link">Location</a></li>
+                <li><a href="reservation.html"class="link">Reservation</a></li>
+            </ul>
+            <a href="order.html" class="order_btn">Order Now</a>
+            <div class="toggle_btn">
+                <i class="fa-solid fa-bars"></i>
+            </div>
         </div>
-        <div>
-            <a href="">Location</a>
-        </div>
-        <div>
-            <a href="">Feedback</a>
-        </div>
-    </section>
-
-    <section id="values">
-        <div id="mission">
             
+        <div class="dropdown">
+            <li><a href="index.html"class="link">Home</a></li>
+            <li><a href="about.html"class="link">About Us</a></li>
+            <li><a href="location.html"class="link">Location</a></li>
+            <li><a href="reservation.html"class="link">Reservation</a></li>
+            <li><a href="order.html" class="order_btn">Order Now</a></li>
         </div>
-        <div id="vision">
+    </header>
 
-        </div>
-        <div id="quality">
-
-        </div>
-    </section>
-
-    <footer>
-
-    </footer>
+    <main>
+        <section id="hero">
+            <h1>Welcome</h1>
+            <p> 
+                Get your most fresh and high quality burger from <br>
+                Downie Burger!
+            </p>
+        </section>
+    </main>
 </body>
 </html>
