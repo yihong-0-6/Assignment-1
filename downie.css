@@ -11,6 +11,7 @@ body{
     background-image: url('images/Hero_Image.jpg');
     background-size: cover;
     background-position: center;
+    background-attachment: fixed;
 }
 
 li{
@@ -28,7 +29,7 @@ a:hover{
 }
 header{
     position: relative;
-    padding: 0 2rem;
+    padding: 0 4rem;
 }
 
 /*Navigation Bar*/
@@ -36,7 +37,6 @@ header{
     width: 100%;
     height: 60px;
     max-width: 1200px;
-    margin: 0 auto;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -138,6 +138,8 @@ section#hero{
 
 /*Menu*/
 section#menu {
+    display: flex;
+    flex-direction: column;
     padding: 100px;
 }
 
@@ -163,12 +165,17 @@ img {
     width: 180px;
     height: 150px;
     object-fit: cover;
+    border-radius: 6px;
     margin-right: 15px;
+}
+
+p{
+    margin-left: auto;
 }
 
 /*Cart*/
 section#cart {
-    background-color: #f9f9f9;
+    background-color: maroon;
     padding: 20px;
 }
 
@@ -187,11 +194,18 @@ button {
     padding: 10px;
     border: none;
     cursor: pointer;
+    margin-left: auto;
 }
 
 button:hover {
     background-color: #555;
 }
+
+
+
+
+
+
 
 @media(max-width: 992px){
     .navbar .links,
@@ -205,6 +219,14 @@ button:hover {
 
     .dropdown{
         display: block;
+    }
+    .menu-item{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .menu-item p{
+        margin-left: 0px;
     }
 }
 
