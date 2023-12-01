@@ -7,7 +7,7 @@
 
 body{
     height: 100vh;
-    background-color: black;
+    background-color: #000;
     background-image: url('images/Hero_Image.jpg');
     background-size: cover;
     background-position: center;
@@ -69,7 +69,7 @@ header{
     font-size: 0.8rem;
     font-weight: bold;
     cursor: pointer;
-    transition: scale 0.2 ease;
+    transition: 0.2 ease;
 }
 
 .order_btn:hover{
@@ -89,7 +89,7 @@ header{
     top: 60px;
     height: 0;
     width: 300px;
-    background: rgba(255,255,255,0.1);
+    background: grey;
     backdrop-filter: blur(15px);
     border-radius: 10px;
     overflow: hidden;
@@ -147,7 +147,7 @@ section#menu {
     display: flex;
     justify-content: center;
     align-items: center;
-    color: #000;
+    color: #fff;
 }
 
 .menu-item {
@@ -157,11 +157,12 @@ section#menu {
     padding: 10px;
     border: 1px solid orange;
     border-radius: 6px;
+    color: #fff;
     margin-bottom: 12px;
     background-color:maroon;
 }
 
-img {
+.menu-item img {
     width: 180px;
     height: 150px;
     object-fit: cover;
@@ -169,14 +170,23 @@ img {
     margin-right: 15px;
 }
 
-p{
+.menu-item p{
     margin-left: auto;
 }
 
 /*Cart*/
 section#cart {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: start;
     background-color: maroon;
     padding: 20px;
+    color: #fff;
+}
+
+#cart p{
+    margin-left: auto;
 }
 
 #cart-items {
@@ -194,17 +204,265 @@ button {
     padding: 10px;
     border: none;
     cursor: pointer;
-    margin-left: auto;
 }
 
 button:hover {
     background-color: #555;
 }
 
+/*About*/
 
+/*Bread*/
+section#bread{
+    display: flex;
+    flex-direction: row;
+    background-color: maroon;
+    border: 1px solid orange;
+    border-radius: 15px;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px;
+    margin-top: 3rem;
+}
 
+#bread img{
+    width: 400px;
+    height: 300px;
+    object-fit: cover;
+}
 
+#bread h1{
+    color: #fff;
+    text-align: center;
+}
 
+/*Patty*/
+section#patty{
+    display: flex;
+    flex-direction: row;
+    background-color: maroon;
+    border: 1px solid orange;
+    border-radius: 15px;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px;
+    margin-top: 3rem;
+}
+
+#patty img{
+    width: 400px;
+    height: 300px;
+    object-fit: cover;
+}
+
+#patty h1{
+    color: #fff;
+    text-align: center;
+}
+
+/*Chicken Patty*/
+section#chicken{
+    display: flex;
+    flex-direction: row;
+    background-color: maroon;
+    border: 1px solid orange;
+    border-radius: 15px;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px;
+    margin-top: 3rem;
+}
+
+#chicken img{
+    width: 400px;
+    height: 300px;
+    object-fit: cover;
+}
+
+#chicken h1{
+    color: #fff;
+    text-align: center;
+}
+
+/*Values*/
+section#values{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    color: #000;
+    margin-top: 3rem;
+    background-color: maroon;
+    padding: 50px;
+    border: 1px solid orange;
+    border-radius: 15px;
+}
+
+.mission{
+    display: flex;
+    flex-direction: column;  
+}
+.mission h3{
+    text-align: center;
+    color: #fff;
+    font-size: 30px;
+}
+
+.mission p{
+    margin-top: 10px;
+    text-align: center;
+    color: #fff;
+    margin-top: 15px;
+}
+
+.vision{
+    display: flex;
+    flex-direction: column; 
+}
+
+.vision h3{
+    text-align: center;
+    color: #fff;
+    font-size: 30px;
+}
+
+.vision p{
+    margin-top: 10px;
+    text-align: center;
+    color: #fff;
+    margin-top: 15px; 
+}
+
+.quality{
+    display: flex;
+    flex-direction: column;
+}
+
+.quality h3{
+    text-align: center;
+    color: #fff;
+    font-size: 30px;
+}
+
+.quality p{
+    margin-top: 10px;
+    text-align: center;
+    color: #fff;
+    margin-top: 15px; 
+}
+
+/*Reservation Page*/
+section#reservationForm{
+    max-width: 600px;
+    margin: 2em auto;
+    padding: 1em;
+    background-color: maroon;
+    color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px #000;
+}
+
+#reservationForm label {
+    display: block;
+    margin-bottom: 0.5em;
+    font-weight: bold;
+}
+
+#reservationForm input{
+    width: 100%;
+    padding: 0.5em;
+    margin-bottom: 1em;
+    box-sizing: border-box;
+}
+
+#reservationForm select{
+    width: 100%;
+    padding: 0.5em;
+    margin-bottom: 1em;
+    box-sizing: border-box;
+}
+
+#reservationForm button {
+    background-color: #333;
+    color: #fff;
+    padding: 0.5em 1em;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#reservationForm button:hover {
+    background-color: #555;
+}
+
+/*Footer*/
+footer {
+    background-color: #333;
+    color: #000;
+    padding: 2em 0;
+    text-align: center;
+}
+
+.footer-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-content h2 {
+    color: #ffcc00;
+}
+
+.footer-content p{
+    font-size: 0.9em;
+    line-height: 1.5;
+    color: #fff;
+}
+
+.left-side{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.footer-links{
+    margin-top: 4em;
+}
+
+/*Google map*/
+.footer-section .map-container {
+    margin-top: 1em;
+}
+
+/*Social Media*/
+.social-media {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 0.2em;
+}
+
+.social-media a {
+    display: inline-block;
+    margin-top: 10px;
+    color: #fff;
+    font-size: 4em;
+}
+
+.social-media a:hover {
+    color: #ffcc00;
+}
+
+/*Bottom*/
+.footer-bottom {
+    margin-top: 2em;
+    color: #fff;
+}
+
+.footer-bottom p {
+    font-size: 0.8em;
+}
 
 
 @media(max-width: 992px){
@@ -227,6 +485,12 @@ button:hover {
     }
     .menu-item p{
         margin-left: 0px;
+    }
+    #reservationForm{
+        width: 90%;
+    }
+    #reservationForm button{
+        width: 100%;
     }
 }
 

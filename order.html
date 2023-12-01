@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Downie Burger</title>
+    <link rel="stylesheet" href="https://github.com/necolas/normalize.css.git">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-Avb2QiuDEEvB4bZJYdft2mNjVShBftLdPG8FJ0V7irTLQ8Uo0qcPxh4Plq7G5tGm0rU+1SPhVotteLpBERwTkw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <script src="navbar.js" defer></script>
     <script src="order.js" defer></script>
@@ -15,10 +16,9 @@
         <div class="navbar">
             <div class="logo"><a href="index.html">Downie Burger</a></div>
             <ul class="links">
-                <li><a href="index.html"class="link">Home</a></li>
-                <li><a href="about.html"class="link">About Us</a></li>
-                <li><a href="location.html"class="link">Location</a></li>
-                <li><a href="reservation.html"class="link">Reservation</a></li>
+                <li><a href="index.html" class="link">Home</a></li>
+                <li><a href="about.html" class="link">About Us</a></li>
+                <li><a href="reservation.html" class="link">Reservation</a></li>
             </ul>
             <a href="order.html" class="order_btn">Order Now</a>
             <div class="toggle_btn">
@@ -27,10 +27,9 @@
         </div>
             
         <div class="dropdown">
-            <li><a href="index.html"class="link">Home</a></li>
-            <li><a href="about.html"class="link">About Us</a></li>
-            <li><a href="location.html"class="link">Location</a></li>
-            <li><a href="reservation.html"class="link">Reservation</a></li>
+            <li><a href="index.html" class="link">Home</a></li>
+            <li><a href="about.html" class="link">About Us</a></li>
+            <li><a href="reservation.html" class="link">Reservation</a></li>
             <li><a href="order.html" class="order_btn">Order Now</a></li>
         </div>
     </header>
@@ -118,4 +117,53 @@
             <button onclick="checkout()">Checkout</button>
         </section>
     </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="left-side">
+                <div class="footer-contact">
+                    <h2>Contact Us</h2>
+                    <p>
+                        Phone: (123) 456-7890<br>
+                        Email: info@example.com
+                    </p   >
+                </div>
+                <div class="footer-links">
+                    <h2>Quick Links</h2>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="reservation.html">Reservations</a></li>
+                        <li><a href="order.html">Order Now</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="location">
+                <h2>Location</h2>
+                <p>
+                    Paragon Shopping Centre #02-32<br>
+                    290 Orchard Rd, Singapore 238859
+                </p>
+                <div class="map-container">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3988.785098871997!2d103.83348157455966!3d1.303968661722462!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31da1992320efb97%3A0xcd0a05fe09ae092a!2sParagon%20Shopping%20Centre!5e0!3m2!1sen!2ssg!4v1701429072981!5m2!1sen!2ssg"
+                        width="100%" height="200" style="border:0;"
+                        allowfullscreen="" loading="lazy" 
+                        referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
+                </div>                
+            </div>
+
+            <div class="social-media">
+                <h2>Social Media</h2>
+                <a href="https://www.facebook.com/huang.yihong.06/friends"><i class="fab fa-facebook"></i></a>
+                <a href="https://www.threads.net/@yi._.hong06"><i class="fab fa-threads"></i></a>
+                <a href="https://www.instagram.com/yi._.hong06/"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; 2023 Downie Burger. All rights reserved. | Designed by Yi Hong</p>
+        </div>
+    </footer>
 </body>
